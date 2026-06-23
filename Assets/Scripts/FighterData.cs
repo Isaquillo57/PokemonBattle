@@ -6,6 +6,7 @@ public class FighterData : ScriptableObject
     public float maxHealth;
     public string name;
     public AttackData[] attacks;
+    public float chargeTime = 2f;
     public AttackData GetRandomAttack()
     {
         return attacks[Random.Range(0, attacks.Length)];
@@ -18,7 +19,7 @@ public class AttackData
     public string name;
     public string animationName;
     public float minDamage;
-    public float maxDamge;
+    public float maxDamage;
     public GameObject chargeParticles;
     public GameObject attackParticles;
 }
