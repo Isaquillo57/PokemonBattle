@@ -18,7 +18,7 @@ public class FightManager : MonoBehaviour
     [SerializeField]
     private int minimumFighters = 2;
     [SerializeField]
-    private int maximumFighters = 2;
+    private int maximumFighters = 3;
     [SerializeField]
     private PoolManager poolManager;
     private List<Fighter> fighters = new List<Fighter>();
@@ -31,6 +31,8 @@ public class FightManager : MonoBehaviour
            SoundManager.instance.Play(fighter.FighterData.appearSoundName);
            fighters.Add(fighter);
            DialogSystem.Instance.ShowDialog(fighter.FighterData.fighterName + " has joined the fight!");
+           fighter.Health.InitializeHealth();
+           fighter.Animator.Play("Idle", 0, 0f);
            if (fighters.Count >= minimumFighters)
             {
                onFightReady?.Invoke();

@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: TyranitarData
   m_EditorClassIdentifier: Assembly-CSharp::FighterData
   maxHealth: 200
-  name: Tyranitar
+  fighterName: Tyranitar
   attacks:
   - name: Plants
     animationName: Attack1
     attackSoundName: TyranitarAtaque1
-    minDamage: 45
-    maxDamage: 0
+    minDamage: 35
+    maxDamage: 45
     chargeParticles: {fileID: 2075816693390889591, guid: da0fef81553269e4992d6811552c389b, type: 3}
     attackParticles: {fileID: 4065338868420044610, guid: bce1e5b223bff6c4f85af5f9400faa9f, type: 3}
   - name: Nature
     animationName: Attack2
     attackSoundName: TyranitarAtaque2
-    minDamage: 60
-    maxDamage: 0
+    minDamage: 35
+    maxDamage: 60
     chargeParticles: {fileID: 2075816693390889591, guid: da0fef81553269e4992d6811552c389b, type: 3}
     attackParticles: {fileID: 4065338868420044610, guid: bce1e5b223bff6c4f85af5f9400faa9f, type: 3}
   chargeTime: 2

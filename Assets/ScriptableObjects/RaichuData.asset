@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: RaichuData
   m_EditorClassIdentifier: Assembly-CSharp::FighterData
   maxHealth: 200
-  name: Raichu
+  fighterName: Raichu
   attacks:
   - name: ZapCannon
     animationName: Attack1
     attackSoundName: RaichuAtaque1
-    minDamage: 40
-    maxDamage: 0
+    minDamage: 20
+    maxDamage: 40
     chargeParticles: {fileID: 7941354014071378158, guid: 199cc5e0cc1583145a343a74b3c0dbf5, type: 3}
     attackParticles: {fileID: 661733612543474483, guid: 020c76e1fcb37a847b06c1f1cdc73f01, type: 3}
   - name: FocusBlast
     animationName: Attack2
     attackSoundName: RaichuAtaque2
-    minDamage: 50
-    maxDamage: 0
+    minDamage: 30
+    maxDamage: 55
     chargeParticles: {fileID: 7941354014071378158, guid: 199cc5e0cc1583145a343a74b3c0dbf5, type: 3}
     attackParticles: {fileID: 661733612543474483, guid: 020c76e1fcb37a847b06c1f1cdc73f01, type: 3}
   chargeTime: 2
